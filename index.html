@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>미디어쿼리를 활용한 반응형웹 예제임</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        #desktop {
+            display: block;
+            width: 100%;
+            height: 1200px;
+            background-color: rgb(69, 196, 19);
+        }
+        #tablet {
+            display: none;
+            width: 100%;
+            height: 1200px;
+            background-color:rgb(255, 0, 242);
+        }
+        #mobile {
+            display: none;
+            width: 100%;
+            height: 1200px;
+            background-color:rgb(44, 42, 165);
+        }
+        @media (max-width: 1024px) {
+            #desktop {
+                display: none;
+            }
+            #tablet {
+                display: block;
+            }
+        }
+        @media (max-width: 640px) {
+            #tablet {
+                display: none;
+            }
+            #mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="desktop">
+        데스크탑 버전 코드 입니다
+        <p>데스크탑 텍스트 추가</p>
+        <p>데스크탑 텍스트 추가</p>
+        <p>데스크탑 텍스트 추가</p>
+        <p>데스크탑 텍스트 추가</p>
+        <p>데스크탑 텍스트 추가</p>
+        <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa0%2Fa6%2F82%2Fa0a68245d7fa8dac28efee13d37448e5.jpg&type=a340">
+    </div>
+    <div id="tablet">
+        태블릿 버전 코드 입니다
+    </div>
+    <div id="mobile">
+        모바일 버전 코드 입니다
+    </div>
+</body>
+    
+</html>
