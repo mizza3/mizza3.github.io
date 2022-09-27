@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+#Btn1 {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    left: 50%;
+    background-color: rgb(255, 238, 82);
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 163, 82);
+}
+#Box1 {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 200px;
+    left: 50%;
+    background-color:rgb(255, 149, 120);
+    border: dashed 3px #d25c5c;
+    font-family: 'Gugi', cursive;
+    font-size: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255)
+}
+
+.Box2 {
+    display: flex;
+    position: absolute;
+    float: left;
+    top: 10px;
+    width: 300px;
+    height: 100%;
+    background-color: #d25c5c;
+    background-size: cover;
+    overflow: visible;
+    background-repeat: no-repeat;
+
+img {height: 100%;}
+}

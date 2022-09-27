@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2022년 9월 27일 오정민 개인 연습</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="Btn1"><a href="#">저는 버튼이예요</a></div>
+    <div id="Box1">저는 내용이예요</div>
+    <div class="Box2">
+        <img width="300" src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F31%2F36%2Ff9%2F3136f9b93ac9f256ab7ccff4a7b43294.jpg&type=a340">
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <script>
+        $('#Btn1').hover(
+            function(){
+                $('#Box1').fadeIn(200);
+            },
+            function(){
+                $('#Box1').fadeOut(200);
+            }
+        );
+
+        $('#Btn1').click(function(){
+            $('#Box1').css({'width':'300px', 'height':'200px', 'border':'dashed 5px #ffffff'});
+        });
+    </script>
+</body>
+    
+</html>
