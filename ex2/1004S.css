@@ -51,6 +51,7 @@
 }
 .material-icons {
     font-size: 48px;
+    color:rgb(219, 13, 255)
 }
 .material-icons:hover {
     color:rgb(255, 165, 243);
