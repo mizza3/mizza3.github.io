@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seraphine, the Starry-eyed Songstress</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 외부 CSS 연결 -->
+    <link href="1004S.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>세상을 바꿔보는거야!</p>
+    <div id="slideshow-frame">
+        <div id="left-box">
+            <span id="btn-left" class="material-icons">auto_awesome</span>
+        </div>
+        <div id="right-box">
+            <span id="btn-right" class="material-icons">star</span>
+        </div>
+        <div id="slides">
+            <img src="images/S1.jpg">
+            <img src="images/S2.jpg">
+            <img src="images/S3.jpg">
+        </div>
+    </div>
+
+    <!-- jQuery 라이브러리 연결 -->
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> CDN 방식으로 연결하는 경우 -->
+
+    <script>
+        var x=0;
+        var w=960; // 이미지의 너비
+        var n=3; // 이미지의 수
+
+        $('#btn-left').off('click').on('click', function(){
+            console.log(x);
+            if(x>=2) {
+                $('#slides').animate({'left': '+='+w*(n-1)}, 800);
+                x = 0;
+            }
+            else {
+                $('#slides').animate({'left': '-='+w}, 800);
+                x = x+1;
+            }
+        });
+        
+        $('#btn-right').off('click').on('click', function(){
+            console.log(x);
+            if(x<=0) {
+                $('#slides').animate({'left': '-='+w*(n-1)}, 800);
+                x = (n-1);
+            }
+            else {
+                $('#slides').animate({'left': '+='+w}, 800);
+                x = x-1;
+            }
+        });
+    </script>
+</body>
+    
+</html>

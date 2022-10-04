@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+
+#slideshow-frame {
+    position: relative;
+    width: 850px;
+    height: 900px;
+    top: 100px;
+    left: 100px;
+    overflow: hidden;
+    
+    /* hidden: 넘치는 부분을 숨김, visiable: 넘치는 부분을 보여줌 */
+
+}
+#left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 900px;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+#right-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 900px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+#slides {
+    position: absolute;
+    width: 2550px;
+    height: 900px;
+    left: 100px;
+    color: #ffffff;
+    background-color:rgb(171, 255, 237);
+}
+#slides > img {
+    display: block;
+    width: 850px;
+    float: left;
+}
+.material-icons {
+    font-size: 48px;
+}
+.material-icons:hover {
+    color:rgb(255, 165, 243);
+}
+p {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 36px;
+    color: rgb(137, 171, 178);
+    margin-left: 200px;
+}
