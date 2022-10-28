@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project_999</title>
+    <link href="1025a.css" rel="stylesheet"> <!-- 외부 CSS 연결 -->
+</head>
+
+<body>
+    <div id="main">
+        <div id="contents">
+            <h1>고양이의_구석을_찾아보세요_</h1>
+        </div>
+        <div id="button1">
+            <div id="target1"></div>
+        </div>
+        <div id="button2">
+            <div id="target2"></div>
+        </div>
+        <div id="button3">
+            <div id="target3"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $('#button1').hover(
+            function(){
+                $('#target1').fadeIn(300);
+            },
+            function(){
+                $('#target1').fadeOut(300);
+            }
+        );
+
+        $('#button2').hover(
+            function(){
+                $('#target2').fadeIn(300);
+            },
+            function(){
+                $('#target2').fadeOut(300);
+            }
+        );
+        $('#button3').hover(
+            function(){
+                $('#target3').fadeIn(300);
+            },
+            function(){
+                $('#target3').fadeOut(300);
+            }
+        );
+    </script>
+</body>
+</html>

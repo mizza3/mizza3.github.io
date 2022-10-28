@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: url('마우스커서.png'), auto;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'GongGothicMedium';
+}
+
+#main {
+    background: url("2022.10.25.\ 웹사이트\ 배경_하양.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contents {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 11px;
+    cursor: cell;
+}
+
+@media screen and (max-width: 1400px) {
+    #contents {
+        font-size: 8px;
+    }
+}
+
+#button1 {
+    display: block;
+    position: relative;
+    top: 15%;
+    left: 22%;
+    width: 30px;
+    height: 30px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#button2 {
+    display: block;
+    position: relative;
+    top: 77%;
+    left: 22%;
+    width: 35px;
+    height: 35px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+#button3 {
+    display: block;
+    position: fixed;
+    top: 80%;
+    left: 75%;
+    width: 35px;
+    height: 35px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+#target1 {
+    display: none;
+    position: relative;
+    top: 70px;
+    left: 170px;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(225, 225, 225);
+    background-size: cover;
+    background-image: url('고양이.jpg');
+}
+
+#target2 {
+    display: none;
+    position: relative;
+    top: -450px;
+    left: 280px;
+    width: 350px;
+    height: 450px;
+    background-color: rgb(225, 225, 225);
+    background-size: cover;
+    background-image: url('고양이3.png')
+}
+
+#target3 {
+    display: none;
+    position: relative;
+    top: -450px;
+    left: -550px;
+    width: 350px;
+    height: 450px;
+    background-color: rgb(225, 225, 225);
+    background-size: cover;
+    background-image: url('고양이1.png')
+}
+
+/* a{
+    color: inher it;
+    text-decoration: none;
+} */
